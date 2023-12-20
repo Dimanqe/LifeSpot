@@ -4,41 +4,78 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <style>
-        /* Свойства стиля элемента. Подробнее о них - в модуле по CSS */
-        .bordered {
-            border: 2px solid black;
-            background-color: azure;
-            padding: 10px;
-        }
-
+        /* Свойства стиля элемента. Подробнее о них в модуле по CSS */
         .video-container {
             display: inline-block;
+            padding-left: 1%;
+        }
+
+        .navbar {
+            color: darkgray;
+            padding-left: 15%;
+        }
+
+        header {
+            padding-left: 1%;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+
+        aside {
+            height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+            width: 10%;
+            position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+            z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+            top: 0; /* Сайдбар будет в самой верхней части страницы */
+            left: 0;
+            background-color: #111; /* Черный цвет фона (задан в виде кода) */
+            overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+            padding-top: 20px;
+        }
+
+        body {
+            padding-left: 10%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>LifeSpot - прямые трансляции с улиц</h1>
+        <p>Покажем, что происходит прямо сейчас</p>
+    </header>
     <div class="bordered">
         <!--Заголовок страницы-->
-        <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
-        <p>Покажем, что происходит прямо сейчас</p>
         <!--<a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>-->
         <!--<a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>-->
         <!--<a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/h1wly909BYw?si=gSyQZQfmIalwFGYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>Трансляция Санкт-Петербурга</h3>
+            <iframe width="426" height="240" src="https://www.youtube.com/embed/h1wly909BYw?si=gSyQZQfmIalwFGYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="video-container">
-            <iframe src="https://vk.com/video_ext.php?oid=-106879986&id=456253295&hash=da6bbec519e15010" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
             <h3>Трансляция Москвы</h3>
+            <iframe width="426" height="240" src="https://www.youtube.com/embed/-fuGASlfFc4?si=b4K_1XqpKjfJFSoe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="video-container">
             <h3>Трансляция Нью-Йорка</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GSmCh4DrbWY?si=djqEiWUzaXPMbANF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="426" height="240" src="https://www.youtube.com/embed/GSmCh4DrbWY?si=djqEiWUzaXPMbANF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+    <aside id="sidebar">
+        <div class="navbar">
+            <p>Все трансляции</p>
+            <p>О проекте</p>
+        </div>
+    </aside>
+    <footer>
+        <p>LifeSpot - все права защищены</p>
+        <p>Связаться с нами: contact@lifespot.ru</p>
+    </footer>
 </body>
 </html>
