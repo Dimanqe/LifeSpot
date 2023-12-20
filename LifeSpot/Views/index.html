@@ -10,6 +10,10 @@
             background-color: azure;
             padding: 10px;
         }
+
+        .video-container {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -18,9 +22,23 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
+        <!--<a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>-->
+        <!--<a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>-->
+        <!--<a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h1wly909BYw?si=gSyQZQfmIalwFGYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Трансляция Санкт-Петербурга</h3>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://vk.com/video_ext.php?oid=-106879986&id=456253295&hash=da6bbec519e15010" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <h3>Трансляция Москвы</h3>
+        </div>
+
+        <div class="video-container">
+            <h3>Трансляция Нью-Йорка</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GSmCh4DrbWY?si=djqEiWUzaXPMbANF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
-    <a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>
-    <a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>
-    <a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>
 </body>
 </html>
