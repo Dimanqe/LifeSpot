@@ -1,0 +1,48 @@
+﻿/* Простые селекторы*/
+.video-container{
+   display: inline-block;
+   padding-left: 1%;
+   padding-top: 1%;
+}
+.navbar{
+   color: darkgray;
+   padding-left: 15%;
+}
+header{
+   padding-left: 1%;
+   padding-top: 1.2%;
+}
+footer {
+   position: absolute;
+   bottom: 0;
+   font-size: medium;
+   color: dimgrey;
+}
+aside{
+   height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+   width: 10%;
+   position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+   z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+   top: 0; /* Сайдбар будет в самой верхней части страницы */
+   left: 0;
+   background-color: #111; /* Черный цвет фона (задан в виде кода) */
+   overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+   padding-top: 2%;
+   font-size: large;
+}
+body{
+   padding-left: 11%;
+}
+/* Комбинированный селектор - применяется ко всем элементам */
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+* Стили панели навигации */
+.navbar p {
+    color: darkgray;
+    padding-left: 15%;
+}
+/* Стили панели навигации при наведении мышью */
+.navbar p:hover {
+    color: aliceblue;
+}

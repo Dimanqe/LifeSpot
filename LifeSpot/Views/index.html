@@ -3,43 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <style>
-        /* Свойства стиля элемента. Подробнее о них в модуле по CSS */
-        .video-container {
-            display: inline-block;
-            padding-left: 1%;
-        }
-
-        .navbar {
-            color: darkgray;
-            padding-left: 15%;
-        }
-
-        header {
-            padding-left: 1%;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-        }
-
-        aside {
-            height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
-            width: 10%;
-            position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
-            z-index: 1; /* Сайд-бар будет поверх остальных элементов */
-            top: 0; /* Сайдбар будет в самой верхней части страницы */
-            left: 0;
-            background-color: #111; /* Черный цвет фона (задан в виде кода) */
-            overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
-            padding-top: 20px;
-        }
-
-        body {
-            padding-left: 10%;
-        }
-    </style>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
@@ -47,11 +11,7 @@
         <p>Покажем, что происходит прямо сейчас</p>
     </header>
     <div class="bordered">
-        <!--Заголовок страницы-->
-        <!--Параграф-->
-        <!--<a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>-->
-        <!--<a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>-->
-        <!--<a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+        
         <div class="video-container">
             <h3>Трансляция Санкт-Петербурга</h3>
             <iframe width="426" height="240" src="https://www.youtube.com/embed/h1wly909BYw?si=gSyQZQfmIalwFGYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -67,10 +27,13 @@
             <iframe width="426" height="240" src="https://www.youtube.com/embed/GSmCh4DrbWY?si=djqEiWUzaXPMbANF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+
+    <input type="checkbox" size= 100% />
+
     <aside id="sidebar">
         <div class="navbar">
-            <p>Все трансляции</p>
-            <p>О проекте</p>
+            <a href="/"><p>Все трансляции</p></a>
+            <a href="/"><p>О проекте</p></a>
         </div>
     </aside>
     <footer>
