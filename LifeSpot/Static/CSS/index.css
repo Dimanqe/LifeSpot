@@ -13,10 +13,12 @@ header{
    padding-top: 1.2%;
 }
 footer {
-   position: absolute;
-   bottom: 0;
-   font-size: medium;
-   color: dimgrey;
+    position: absolute;
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%;
+    padding-left: 1%;
 }
 aside{
    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
@@ -37,6 +39,9 @@ body{
 header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
+header, footer, body, .video-container {
+    background-color: linen;
+}
 * Стили панели навигации */
 .navbar p {
     color: darkgray;
@@ -45,4 +50,8 @@ header, footer, aside, body, .navbar, .video-container {
 /* Стили панели навигации при наведении мышью */
 .navbar p:hover {
     color: aliceblue;
+}
+form input:focus {
+    box-shadow: 0px 0px 10px #00FF;
+    
 }
