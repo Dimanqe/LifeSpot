@@ -20,7 +20,8 @@ footer {
     bottom: 0;
     font-size: medium;
     color: dimgrey;
-    line-height:66%
+    line-height: 66%;
+    padding-left: 1%;
 }
 
 aside {
@@ -43,7 +44,6 @@ body {
 header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
-
 * Стили панели навигации */
 .navbar p {
     color: darkgray;
@@ -53,16 +53,3 @@ header, footer, aside, body, .navbar, .video-container {
 .navbar p:hover {
     color: aliceblue;
 }
-
-header {
-    color: black;
-    padding-left: 1%;
-    padding-top: 1.2%;
-}
-header h1 {
-    color: red;
-}
-header, footer, body, .video-container {
-    background-color: linen;
-}
-
