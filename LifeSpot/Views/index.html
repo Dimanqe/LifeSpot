@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
-    <script src="/Static/JS/index.js" defer></script>
+    <script src="/Static/JS/index.js"></script>
 </head>
 <body>
-    <header>
-        <h1>LifeSpot - прямые трансляции с улиц</h1>
-        <p>Покажем, что происходит прямо сейчас</p>
-        <form action="/" method="post">
-            <label>Поиск видео</label>
-            <input type="search"/> 
-        </form>
-        
-    </header>
+<header>
+    <h1>LifeSpot - прямые трансляции с улиц</h1>
+    <p>Покажем, что происходит прямо сейчас</p>
+    Введите место для поиска трансляции: <input type="text" id="userInput" oninput="filterContent();" />
+</header>
     <div class="bordered">
-
         <div class="video-container">
-            <h3>Трансляция Санкт-Петербурга</h3>
-            <iframe width="426" height="240" src="https://www.youtube.com/embed/h1wly909BYw?si=gSyQZQfmIalwFGYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
         </div>
-
         <div class="video-container">
-            <h3>Трансляция Москвы</h3>
-            <iframe width="426" height="240" src="https://www.youtube.com/embed/-fuGASlfFc4?si=b4K_1XqpKjfJFSoe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
         </div>
-
         <div class="video-container">
-            <h3>Трансляция Нью-Йорка</h3>
-            <iframe width="426" height="240" src="https://www.youtube.com/embed/GSmCh4DrbWY?si=djqEiWUzaXPMbANF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/muVgPUnU7qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Лондон, автобусный маршрут</h3>
         </div>
     </div>
 
