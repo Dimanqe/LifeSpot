@@ -5,13 +5,25 @@
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script src="/Static/JS/index.js"></script>
+    <script>       
+        // Создадим и обработаем сессию
+        handleSession();
+        //Проверяем возраст
+        CheckAge();
+        // Логируем в консоль.
+        sessionLog();
+
+        showSuggestion();
+    </script>
+    <script>const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();</script>
 </head>
 <body>
-<header>
-    <h1>LifeSpot - прямые трансляции с улиц</h1>
-    <p>Покажем, что происходит прямо сейчас</p>
-    Введите место для поиска трансляции: <input type="text" id="userInput" oninput="filterContent();" />
-</header>
+    <header>
+        <h1>LifeSpot - прямые трансляции с улиц</h1>
+        <p>Покажем, что происходит прямо сейчас</p>
+        Введите место для поиска трансляции: <input type="text" id="userInput" oninput="filterContent(inputParseFunction);" size=50% />
+    </header>
     <div class="bordered">
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -30,7 +42,8 @@
     <aside id="sidebar">
         <div class="navbar">
             <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
+            <a href="/about"><p>О проекте</p></a>
+            <a href="/testing"><p>Тестирование</p></a>
         </div>
     </aside>
     <footer>
