@@ -30,7 +30,6 @@ function CheckAge() {
     }
 }
 
-
 // Вывод в консоль
 for (let result of session) {
     console.log(result)

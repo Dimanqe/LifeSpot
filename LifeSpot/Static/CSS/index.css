@@ -44,6 +44,7 @@ body {
 header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
+
 * Стили панели навигации */
 .navbar p {
     color: darkgray;
@@ -53,12 +54,14 @@ header, footer, aside, body, .navbar, .video-container {
 .navbar p:hover {
     color: aliceblue;
 }
+
 .review-container, .review-button {
     display: inline-block;
     margin-top: 0.5em;
     padding-left: 0.5%;
     padding-top: 1%;
 }
+
 .review-container, .review-button {
     display: inline-block;
     margin-top: 0.5em;

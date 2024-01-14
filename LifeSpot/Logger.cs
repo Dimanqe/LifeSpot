@@ -3,8 +3,6 @@ using System.Text;
 
 namespace LifeSpot
 {
-
-
     public class Logger
     {
         /// <summary>
