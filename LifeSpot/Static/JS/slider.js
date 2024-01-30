@@ -14,7 +14,6 @@
 
     buttons.forEach(button => {
         button.addEventListener("mousedown", (e) => {
-            // Reset isClick to true when the button is clicked
             isClick = true;
             dragStop(e);
             let firstImageWidth = firstImg.clientWidth;
@@ -26,13 +25,11 @@
             setTimeout(() => showHideButtons(), 60);
         });
 
-        // Add a mouseover event listener to prevent sliding when hovering over buttons
         button.addEventListener("mouseover", () => {
-            isClick = false; // Set isClick to false when hovering over the buttons
+            isClick = false;                            
         });
     });
 
-    // Add a mouseout event listener to prevent sliding when the mouse leaves the carousel
     carousel.addEventListener("mouseout", (e) => {
         if (isDragStart || isClick) {
             e.preventDefault();

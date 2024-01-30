@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using System.Text;
@@ -88,7 +87,7 @@ namespace LifeSpot
                 var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                     .Replace("<!--SIDEBAR-->", sideBarHtml)
                     .Replace("<!--FOOTER-->", footerHtml);
-                    
+
                 await context.Response.WriteAsync(html.ToString());
             });
 
@@ -107,7 +106,7 @@ namespace LifeSpot
 
 
         }
-       public static void MapImages(IApplicationBuilder app, IWebHostEnvironment env)
+        public static void MapImages(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseStaticFiles(new StaticFileOptions
             {
