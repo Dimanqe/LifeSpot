@@ -80,8 +80,20 @@ function getReview() {
     writeReview(review)
 }
 const writeReview = review => {
-    document.getElementsByClassName('review-container')[0].innerHTML += '<div class="review-text">\n' +
-        `<p> <i> <b>${review['userName']}</b>  ${review['date']}</i></p>` +
-        `<p>${review['comment']}</p>` +
+    let likeCounter = '';
+
+    // Для проверки, является ли объект отзывом, используем свойство hasOwnProperty
+    if (review.hasOwnProperty('rate')) {
+        likeCounter += '           <b style="color: chocolate">Рейтинг:</b>   ' + review.rate;
+    }
+
+    // Запишем результат
+    document.getElementsByClassName('reviews')[0].innerHTML += '    <div class="review-text">\n' +
+        `<p> <i> <b>${review['author']}</b>  ${review['date']}${likeCounter}</i></p>` +
+        `<p>${review['text']}</p>` +
         '</div>';
 }
+/*
+* Оставить комментарий
+*
+* */
