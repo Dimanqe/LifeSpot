@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.Extensions.FileProviders;
 using System.IO;
 using System.Text;
 
@@ -100,6 +103,16 @@ namespace LifeSpot
                 .Replace("<!--SLIDER-->", sliderHtml);
 
                 await context.Response.WriteAsync(html.ToString());
+            });
+
+
+        }
+       public static void MapImages(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Views", "Shared", "Images")),
+                RequestPath = "/Views/Shared/Images"
             });
         }
 

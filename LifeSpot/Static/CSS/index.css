@@ -129,6 +129,7 @@ header, footer, aside, body, .navbar, .video-container {
 
 .button, #right {
     right: -25px;
+    display: none;
 }
 
 .wrapper {
